@@ -13,7 +13,7 @@ def learn():
     for i in range(N):
         collect_input(np.ones(i), np.arange(i))
 
-# f(np.zeros(0), np.zeros(0)), g()
+# collect_input(np.zeros(0), np.zeros(0)), learn()
 
 time = timeit(lambda: collect_input(np.ones(N), np.arange(N)), number=N)
 print(f"Done. time (f)={time:.4f}")
